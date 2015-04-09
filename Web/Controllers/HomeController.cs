@@ -5,6 +5,7 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
+        #region simple validation
         public ActionResult SimpleValidation()
         {
             return View();
@@ -16,5 +17,13 @@ namespace Web.Controllers
             ViewBag.Result = "Result returned from the server";
             return View(provider);
         }
+        #endregion
+
+        #region validation with custom messages
+        public ActionResult ValidationWithCustomMessages()
+        {
+            return View();
+        }
+        #endregion
     }
 }

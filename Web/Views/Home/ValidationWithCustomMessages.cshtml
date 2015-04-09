@@ -1,9 +1,8 @@
 ﻿@{
-    ViewBag.Title = "Simple validation";
+    ViewBag.Title = "Validation with custom messages";
 }
-
 <h4>
-    <strong>A simple validation for submit</strong>
+    <strong>Validation with messages defined</strong>
 </h4>
 <form>
     <!--You must define the 'name' attribute for jQuery validation-->
@@ -29,6 +28,7 @@
         </div>
     </div>
 </form>
-@section scripts{
-    @Scripts.Render("~/bundles/simpleValidation")
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
 }
