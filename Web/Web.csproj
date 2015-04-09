@@ -137,6 +137,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\simpleValidation.js" />
     <Content Include="Scripts\valDefaults.js" />
+    <Content Include="Scripts\validationOnSelect.js" />
     <Content Include="Scripts\valWithMessages.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -155,6 +156,7 @@
     <Content Include="Views\Home\InvalidHandler.cshtml" />
     <Content Include="Views\Home\CustomRules.cshtml" />
     <Content Include="Views\Home\DependentRule.cshtml" />
+    <Content Include="Views\Home\ValidationOnSelect.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

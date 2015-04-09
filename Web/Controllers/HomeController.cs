@@ -40,5 +40,10 @@ namespace Web.Controllers
         {
             return View();
         }
+
+        public ActionResult ValidationOnSelect()
+        {
+            return View();
+        }
     }
 }

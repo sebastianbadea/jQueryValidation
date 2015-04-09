@@ -54,3 +54,9 @@ $("form").validate({
         }
     }
 });
+//applying suplimentary rules works only after the validate stuff
+$(".other").each(function (index, element) {
+    $(this).rules("add", {
+        required: true
+    });
+});
