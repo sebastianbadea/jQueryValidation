@@ -229,7 +229,7 @@ $.extend($.validator, {
 		messages: {},
 		groups: {},
 		rules: {},
-		errorClass: "error",
+		errorClass: "text-danger",
 		validClass: "valid",
 		errorElement: "label",
 		focusInvalid: true,

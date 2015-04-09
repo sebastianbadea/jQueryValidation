@@ -1,0 +1,7 @@
+﻿1. By default the jQuery validation adds a 'error' css class on the validated field and on the message
+For displaying a different style, you have 2 options:
+	a) if you know that you are going to use the same css class on the whole project, you can change the css class in jquery.validate.js: errorClass: "whateverClass"
+	b) if you want to use different style on forms, you can set the css class in your javascript validation files: errorClass: "whateverClass"
+2. You can override the settings in 2 ways:
+	a) before the validation definition: $.validator.setDefaults({highlight: function (element) {}}); - all the properties that can be set in the validation definition
+	b) directly in the validation definition: highlight: function (element) {}
