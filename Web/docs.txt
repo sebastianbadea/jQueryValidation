@@ -5,3 +5,8 @@ For displaying a different style, you have 2 options:
 2. You can override the settings in 2 ways:
 	a) before the validation definition: $.validator.setDefaults({highlight: function (element) {}}); - all the properties that can be set in the validation definition
 	b) directly in the validation definition: highlight: function (element) {}
+3. The validation will be performed on submit or on focus out on the control. This means that, if you have a dependent or a custom rule that depends on another control and that control is changed, the rule won't be re-evaluated.
+4. The default messages can be changed from jquery.validate.js: 
+	messages: {
+		required: "This field is required.", ..
+	}

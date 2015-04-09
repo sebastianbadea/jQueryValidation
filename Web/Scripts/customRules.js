@@ -1,4 +1,11 @@
-﻿$("form").validate({
+﻿$.validator.addMethod("depCustomRule", function (value, element) {
+    //the result of the function will be interpreted as isValid=true || false
+    return !(value.length > 0 && $("#Code").val().length == 0);
+}
+//you can define the message in the rule
+//, "If the code is empty, you cannot fill the dependent");
+);
+$("form").validate({
     //errorClass: 'text-danger',
     //highlight: function (element) { console.log("override from definition");},
     invalidHandler: function (event, validator) {
@@ -22,6 +29,16 @@
         Code: {
             required: true,
             number: true
+        },
+        DependentRule: {
+            required: {
+                depends: function (element) {
+                    //the function must return true or false. Based on the result the validation will be applied or not.
+                    return $("#DependentCheck").is(":checked");
+                }
+            },
+            depCustomRule: true
+            //greaterThanZero: true
         }
     },
     //here you can define the messages you want to display for each rule
@@ -32,6 +49,9 @@
         },
         Code: {
             required: "The Code also must be completed"
+        },
+        DependentRule: {
+            depCustomRule: "If the code is empty, you cannot fill the dependent"
         }
     }
 });
