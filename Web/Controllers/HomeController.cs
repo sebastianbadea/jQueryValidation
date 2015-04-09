@@ -26,7 +26,17 @@ namespace Web.Controllers
         }
         #endregion
 
+        public ActionResult DependentRule()
+        {
+            return View();
+        }
+
         public ActionResult InvalidHandler()
+        {
+            return View();
+        }
+
+        public ActionResult CustomRules()
         {
             return View();
         }
