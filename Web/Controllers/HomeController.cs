@@ -25,5 +25,10 @@ namespace Web.Controllers
             return View();
         }
         #endregion
+
+        public ActionResult InvalidHandler()
+        {
+            return View();
+        }
     }
 }

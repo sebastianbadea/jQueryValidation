@@ -32,6 +32,7 @@ namespace Web
                       "~/Scripts/simpleValidation.js"));
             bundles.Add(new ScriptBundle("~/bundles/valWithMessages").Include(
                       "~/Scripts/valWithMessages.js"));
+            bundles.Add(new ScriptBundle("~/bundles/invalidHandler").Include("~/Scripts/invalidHandler.js"));
         }
     }
 }
