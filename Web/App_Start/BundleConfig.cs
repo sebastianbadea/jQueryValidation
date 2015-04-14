@@ -34,6 +34,7 @@ namespace Web
             bundles.Add(new ScriptBundle("~/bundles/invalidHandler").Include("~/Scripts/invalidHandler.js"));
             bundles.Add(new ScriptBundle("~/bundles/customRules").Include("~/Scripts/customRules.js"));
             bundles.Add(new ScriptBundle("~/bundles/validationOnSelect").Include("~/Scripts/validationOnSelect.js"));
+            bundles.Add(new ScriptBundle("~/bundles/validationWithoutSubmit").Include("~/Scripts/validationWithoutSubmit.js"));
         }
     }
 }

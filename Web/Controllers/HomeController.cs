@@ -45,5 +45,9 @@ namespace Web.Controllers
         {
             return View();
         }
+        public ActionResult ValidationWithoutSubmit()
+        {
+            return View();
+        }
     }
 }

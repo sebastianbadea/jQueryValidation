@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Validation without submit";
+}
+<h4>
+    <strong>Validation without submit</strong>
+</h4>
+<p class="text-info">
+    For automatic validation you must include the submit/button within form.
+    If you want validation for a button outside the form, you must call the .valid() function.
+</p>
+<form>
+    <!--You must define the 'name' attribute for jQuery validation-->
+    <div class="form-horizontal">
+        <h4>Provider</h4>
+        <hr />
+        <div class="form-group has-warning">
+            <label class="control-label" id="errors"></label>
+        </div>
+        <div class="form-group">
+            <label for="Name" class="control-label col-md-2">Name</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="Name" name="Name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Code" class="control-label col-md-2">Code</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="Code" name="Code" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="DependentCheck" class="control-label col-md-2">Apply dependent rule</label>
+            <div class="col-md-10">
+                <input type="checkbox" id="DependentCheck" name="DependentCheck" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="DependentRule" class="control-label col-md-2">Dependent rule</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="DependentRule" name="DependentRule" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="FirstOther" class="control-label col-md-2">First other</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control other" id="FirstOther" name="FirstOther" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="SecondOther" class="control-label col-md-2">Second other</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control other" id="SecondOther" name="SecondOther" />
+            </div>
+        </div>
+    </div>
+</form>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <button class="btn btn-info">Create</button>
+    </div>
+</div>
+<p id="message"></p>
+@section scripts{
+    @Scripts.Render("~/bundles/validationWithoutSubmit")
+}
+
