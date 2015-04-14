@@ -63,7 +63,7 @@ $(".other").each(function (index, element) {
         }
     });
 });
-$("button").click(function () {
+$("#btnCreate").click(function () {
     var message = $("#message");
     if ($("form").valid()) {
         message.html("The form is valid.").removeClass("text-warning").addClass("text-success");
@@ -72,4 +72,8 @@ $("button").click(function () {
     else {
         message.html("The form is NOT valid.").removeClass("text-success").addClass("text-warning");
     }
+});
+$("#NotValidate").click(function (event) {
+    event.preventDefault();
+    //ajax call, whatever
 });
