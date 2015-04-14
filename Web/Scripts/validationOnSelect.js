@@ -57,6 +57,9 @@ $("form").validate({
 //applying suplimentary rules works only after the validate stuff
 $(".other").each(function (index, element) {
     $(this).rules("add", {
-        required: true
+        required: true,
+        messages: {
+            required: "The other fields are required."
+        }
     });
 });
