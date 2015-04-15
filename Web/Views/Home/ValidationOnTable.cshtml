@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Validation on table";
+}
+
+<h4>
+    <strong>Validation for a dynamic number of fields</strong>
+</h4>
+<form>
+    <!--You must define the 'name' attribute for jQuery validation-->
+    <div class="form-horizontal">
+        <button class="btn btn-success" id="add">Add item</button>
+        <hr />
+        <table>
+            <tbody></tbody>
+        </table>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
+@section scripts{
+    @Scripts.Render("~/bundles/validationOnTable")
+}

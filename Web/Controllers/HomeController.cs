@@ -49,5 +49,9 @@ namespace Web.Controllers
         {
             return View();
         }
+        public ActionResult ValidationOnTable()
+        {
+            return View();
+        }
     }
 }
